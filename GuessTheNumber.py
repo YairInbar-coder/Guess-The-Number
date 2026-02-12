@@ -7,7 +7,7 @@ ctk.set_default_color_theme('blue')
 
 def temporery_label(parent, text, duration_ms=1000):
     label = ctk.CTkLabel(parent, text=random.randint(1, 10))
-    label.pack()
+    label.place(x=126, y=152)
     parent.after(duration_ms, label.destroy)
     return label
 def main():
